@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Food Lover</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="navbar">
+    <img src="logo.png" alt="logo" onclick="message()">
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</div>
+
+<section id="contact">
+            <div class="container">
+                <div class="contact-contact">
+                    <div class="contect-info">
+                        <div>
+                            <h3>ADDRESS</h3>
+                            <p><i class="fa-solid fa-location-dot"></i>Hosary Mosque,6 October,Egypt</p>
+                            <P><i class="fa-solid fa-phone"></i>Phone: 31684768</P>
+                            <P><i class="fa-regular fa-envelope"></i>Support@foodlover.com</P>
+                        </div>
+                        <div>
+                            <h3>WORKING HOURS</h3>
+                             <p>8:00 am to 11:00 pm on weekdays</p>
+                             <p>11:00 am to 1:00 pm on weekends</p>
+                        </div>
+                        <div>
+                            <h3>FOLLOW US</h3>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+            <form  action="contact.php" method="post">
+                <input type="text" name="name" id="name" placeholder="Full Name" required>
+                <input type="email" name="email" id="email" placeholder="Email Address" required>
+                <input type="text" name="subject" id="subject" placeholder="Subject" required>
+                <textarea name="message" id="message" cols="30" rows="5" placeholder="Message"></textarea>
+                <button class="btn" type="submit">Send Message</button>
+            </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2026 All Rights Reserved | Made by Mahmoud Gharib</p>
+    </footer>
+<script src="index.js"></script>
+</body>
+</html>

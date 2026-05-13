@@ -4,133 +4,26 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html
 {
     scroll-behavior: smooth;
 }
+
 body
 {
-font-family: sans-serif;
+    font-family: sans-serif;
 }
+
+/* ================= HEADER ================= */
+
 header
 {
     height: 100vh;
-    background: url(home_bg.jpeg) center center/cover no-repeat; 
+    background: url(home_bg.jpeg) center center/cover no-repeat;
     position: relative;
 }
-.navbar
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.navbar img
-{
-    width: 80px;
-    margin-left: 100px;
-}
-ul{
-    list-style: none;
 
-}
-a
-{
-    text-decoration: none;
-
-}
-.navbar ul
-{
-    display: flex;
-    margin-right: 100px;
-}
-.navbar ul li a
-{
-    color:  #ff6b00;
-    padding:15px 20px;
-    font-weight: 600;
-}
-.navbar ul li a:hover
-{
-    border-bottom: 2px solid #cc5500;
-}
-
-.menu-table {
-  width: 80%;
-  margin: auto;
-  border-collapse: collapse;
-}
-
-.menu-table tr {
-  border-bottom: 1px dashed #ccc;
-}
-
-.menu-table td {
-  padding: 20px;
-  vertical-align: middle;
-}
-
-.img img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-}
-
-.info h3 {
-  margin: 0;
-  font-size: 18px;
-}
-
-.info p {
-  margin: 5px 0 0;
-  color: #777;
-  font-size: 14px;
-}
-
-.price {
-  color: #ffb84d;
-  font-weight: bold;
-  font-size: 18px;
-  text-align: right;
-}
-header .content
-{
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 75%;
-}
-header .content h1
-{
-    font-size: 40px;
-    color: white;
-}
-header .content p
-{
-    color: #fff;
-    margin: 20px 0 40px;
-}
-.p-text
-{
-    color: #e4b95b;
-}
-.btn
-{
-    display: inline-block;
-    padding: 15px 30px;
-    border-radius: 15px;
-    border:none;
-}
-.btn-p
-{
-    color: white;
-    border: 1px solid white;
-}
-.btn-p:hover,.btn-secondry:hover
-{
-    background-color: #e4b95b;
-
-}
 header::before
 {
     position: absolute;
@@ -141,141 +34,209 @@ header::before
     top: 0;
     bottom: 0;
 }
+
 header *
 {
     z-index: 10;
     animation: fadeIn 2s forwards;
 }
+
+/* ================= NAVBAR ================= */
+
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar img
+{
+    width: 80px;
+    margin-left: 100px;
+}
+
+ul
+{
+    list-style: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.navbar ul
+{
+    display: flex;
+    margin-right: 100px;
+}
+
+.navbar ul li a
+{
+    color: #ff6b00;
+    padding: 15px 20px;
+    font-weight: 600;
+}
+
+.navbar ul li a:hover
+{
+    border-bottom: 2px solid #cc5500;
+}
+
+/* ================= CONTENT ================= */
+
+header .content
+{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+}
+
+header .content h1
+{
+    font-size: 40px;
+    color: white;
+}
+
+header .content p
+{
+    color: #fff;
+    margin: 20px 0 40px;
+}
+
+.p-text
+{
+    color: #e4b95b;
+}
+
+/* ================= BUTTONS ================= */
+
+.btn
+{
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 15px;
+    border: none;
+}
+
+.btn-p
+{
+    color: white;
+    border: 1px solid white;
+}
+
+.btn-p:hover,
+.btn-secondry:hover
+{
+    background-color: #e4b95b;
+}
+
+.btn-secondry
+{
+    color: #fff;
+    background-color: #383848;
+    margin-top: 32px;
+}
+
+/* ================= GLOBAL ================= */
+
 .container
 {
     max-width: 1100px;
     margin: auto;
 }
+
+/* ================= ABOUT ================= */
+
 #about
 {
-display: flex;
-justify-content: center;
-align-items: center;
-height: 80vh;
-background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #f4f4f4;
 }
-#about .title,#offers .title,#menu .title
+
+#about .title,
+#menu .title
 {
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 64px;
 }
-#about h2 ,#offers h2,#menu  h2,#gallary h2
 
-
+#about h2,
+#menu h2
 {
     font-size: 40px;
     margin-bottom: 20px;
 }
-#about h2 #menu  h2
-{
-        color: #383848;
 
+#about h2,
+#menu h2
+{
+    color: #383848;
 }
-#about .title p ,#menu .title p 
+
+#about .title p,
+#menu .title p
 {
     font-size: 14px;
     color: #9a9a9a;
     font-weight: 600;
 }
+
 #about .about-content
 {
-display: flex;
-justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
+
 #about .about-content img
 {
-    width:450px;
+    width: 450px;
 }
+
 #about .about-content p
 {
     color: #9a9a9a;
-    margin-right:7rem ;
+    margin-right: 112px;
     font-weight: 500;
     line-height: 1.6;
 }
-.btn-secondry
-{
-    color: #fff;
-    background-color: #383848;
-    margin-top: 2rem;
-}
-#offers
-{
-    height:80vh;
-    display: flex;
-    justify-content: center;
-    background: url(offer-background.jpg) center center/cover fixed;
-}
-#offers h2{
-        color: #e4b95b;
 
-}
-#offers .title p{
-    color: #fff;
-    font-weight: 500;
-}
+/* ================= MENU ================= */
 
-#offers .offers-items
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-
-} 
-#offers .offers-items img
-{
-    width:200px;
-}
-#offers .offers-items h3
-{
-        font-size: 25px;
-    margin: 15px 0;
-}
-#offers .offers-items p
-{
- font-weight: 300;
- font-size: 14px;
- margin-bottom: 15px;
- padding: 0 20px;   
-}
-#offers .offers-items span
-{
-    font-weight: 600;
-    font-size: 18px;
-    margin-left: 15px;
-}
 #menu
 {
     background-color: #f4f4f4;
-    padding: 5rem 0;
-
+    padding: 80px 0;
 }
+
 #menu .menu-items
 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+#menu .menu-items .menu-item
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
 #menu .menu-items .menu-item img
 {
     width: 80px;
     border-radius: 50%;
     margin-right: 20px;
 }
-#menu .menu-items .menu-item
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin:40px ;
-}
+
 #menu .menu-items .menu-item h3
 {
     color: #383848;
@@ -284,112 +245,123 @@ justify-content: space-between;
     position: relative;
     border-bottom: 1px dashed #c2bdbd;
 }
-#menu .menu-items .menu-item span{
+
+#menu .menu-items .menu-item span
+{
     position: absolute;
-    top:0;
+    top: 0;
     right: 0;
 }
+
 #menu .btn
 {
     background-color: #e4b95b;
     color: #fff;
     display: block;
-    margin:20px auto 0;
+    margin: 20px auto 0;
     cursor: pointer;
 }
+
 #menu .btn:hover
 {
     background-color: #383848;
 }
-#daytime
+
+/* ================= MENU TABLE ================= */
+
+.menu-table
 {
-    background: url(daytime_bg.jpeg) center center/cover fixed no-repeat;
-    color: #fff;
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
 }
-#daytime .daytime-items
+
+.menu-table tr
 {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    height: 40vh;
+    border-bottom: 1px dashed #ccc;
 }
-#daytime .daytime-items h3{
-    font-size: 32px;
-    margin: 20px 0 10px;
-}
-#daytime .daytime-items p
+
+.menu-table td
 {
-    font-weight: 500;
+    padding: 20px;
+    vertical-align: middle;
 }
-#gallary
+
+.img img
 {
-    background: url(offer-background.jpg) center center/cover no-repeat;
-    padding: 8rem 0 6rem;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
 }
-#gallary .img-gallary img
+
+.info h3
 {
-    width: 280px;
-    height: 200px;
-    border-radius: 15px;
-    margin: 20px;
-    opacity: 0.8;
+    margin: 0;
+    font-size: 18px;
 }
-#gallary .img-gallary
+
+.info p
 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    margin: 5px 0 0;
+    color: #777;
+    font-size: 14px;
 }
-#gallary h2{
-    color: #fff;
-    text-align: center;
-    text-transform: capitalize;
-}
-#gallary .img-gallary img:hover
+
+.price
 {
-    opacity: 1;
+    color: #ffb84d;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: right;
 }
+
 #contact
 {
-    padding: 5rem 0;
+    padding: 80px 0;
     background-color: #f4f4f4;
 }
+
 #contact .container
 {
     max-width: 900px;
 }
+
 #contact .contact-contact
 {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
+
 #contact .contact-contact .contect-info
 {
     width: 50%;
 }
+
 #contact .contact-contact .contect-info div
 {
     margin: 30px 0;
     line-height: 1.7;
 }
+
 #contact .contact-contact .contect-info h3
 {
     font-size: 28px;
     color: #383848;
     margin-bottom: 10px;
 }
+
 #contact .contact-contact .contect-info p
 {
     color: #9a9a9a;
 }
+
 #contact .contact-contact .contect-info i
 {
     color: #e4b95b;
-    margin-right:5px ;
+    margin-right: 5px;
 }
+
 #contact .contact-contact .contect-info a i
 {
     font-size: 20px;
@@ -398,33 +370,45 @@ justify-content: space-between;
     color: #fff;
     border-radius: 50%;
 }
+
 #contact .contact-contact .contect-info a i:hover
 {
     background-color: #e4b95b;
     color: #383848;
 }
-form{
+
+/* ================= FORM ================= */
+
+form
+{
     width: 50%;
 }
-form input,textarea
+
+form input,
+textarea
 {
     border: none;
     display: block;
     width: 100%;
-    background-color:#e3e2dd;
+    background-color: #e3e2dd;
     padding: 20px 15px;
     margin: 15px 0;
 }
+
 form .btn
 {
     background-color: #e4b95b;
     color: #fff;
 }
+
 #contact .btn:hover
 {
     background-color: #383848;
     cursor: pointer;
 }
+
+/* ================= FOOTER ================= */
+
 footer
 {
     text-align: center;
@@ -433,21 +417,198 @@ footer
     color: #fff;
     font-size: 14px;
 }
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+
+/* ================= ANIMATION ================= */
+
+@keyframes fadeIn
+{
+    from
+    {
+        opacity: 0;
+    }
+
+    to
+    {
+        opacity: 1;
+    }
 }
-@media (max-width: 768px) {
-    #contact .contact-contact {
+
+/* ================= TABLET ================= */
+
+@media (max-width: 992px)
+{
+    .container
+    {
+        padding: 0 20px;
+    }
+    #menu .menu-items
+    {
+        flex-direction: column;
+    }
+
+    #contact .contact-contact
+    {
+        gap: 30px;
+    }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px)
+{
+    .navbar
+    {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .navbar img
+    {
+        margin: 0 auto 10px;
+    }
+
+    .navbar ul
+    {
+        margin: 0 0 10px 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar ul li a
+    {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    header .content h1
+    {
+        font-size: 28px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    header .content p
+    {
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    #about
+    {
+        height: auto;
+        padding: 48px 0;
+    }
+
+    #about .about-content
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about .about-content img
+    {
+        width: 100%;
+        max-width: 350px;
+        margin: auto;
+    }
+
+    #about .about-content p
+    {
+        margin-right: 0;
+        font-size: 15px;
+        padding: 0 10px;
+    }
+
+    #menu{
+        padding: 30px 0;
+    }
+    #menu .menu-items
+    {
+        flex-direction: column;
+    }
+
+    #menu .menu-items .menu-item
+    {
+        margin: 20px 10px;
+    }
+
+    .menu-table
+    {
+        width: 95%;
+    }
+
+    .menu-table td
+    {
+        padding: 10px;
+    }
+
+    .img img
+    {
+        width: 60px;
+        height: 60px;
+    }
+    img
+    {
+        width: 90%;
+        height: auto;
+    }
+
+    #contact{
+        padding: 30px 0;
+    }
+
+    #contact .contact-contact
+    {
         flex-direction: column;
     }
 
     form,
-    #contact .contect-info {
+    #contact .contact-contact .contect-info
+    {
         width: 100%;
+    }
+
+    #about h2,
+    #menu h2
+    {
+        font-size: 28px;
+    }
+
+    .btn-secondry
+    {
+        margin-top: 16px;
+        margin-bottom: 10px;
+    }
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px)
+{
+    header .content h1
+    {
+        font-size: 22px;
+    }
+
+    .btn
+    {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    #about h2,
+    #menu h2
+    {
+        font-size: 24px;
+    }
+
+    .info h3
+    {
+        font-size: 16px;
+    }
+
+    .price
+    {
+        font-size: 16px;
     }
 }
